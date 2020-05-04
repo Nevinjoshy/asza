@@ -10,13 +10,13 @@ from requests import get
 
 @run_async
 
-def ud(bot: Bot, update: Update):
+def req(bot: Bot, update: Update):
 
   message = update.effective_message
 
-  text = message.text[len('/ud '):]
+  text = message.text[len('/request '):]
 
-  message.reply_text("[link](buttonurl"+text[5:]+")")
+  message.reply_text(text)
 
 __help__ = """
 

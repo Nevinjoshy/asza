@@ -24,10 +24,10 @@ __help__ = """
 
 """
 
-__mod_name__ = "Urban dictionary"
+__mod_name__ = "Request "
 
   
 
-ud_handle = DisableAbleCommandHandler("ud", ud)
+req_handle = DisableAbleCommandHandler("req", req)
 
-dispatcher.add_handler(ud_handle)
+dispatcher.add_handler(req_handle)
